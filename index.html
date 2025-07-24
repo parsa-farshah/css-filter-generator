@@ -6,6 +6,14 @@
     <title>Photoshop Online</title>
     <link rel="stylesheet" href="assets/styleSheets/global.css" />
     <link rel="stylesheet" href="assets/styleSheets/master.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -65,6 +73,54 @@
           <h6>hue : <span id="numbHue">0</span>deg</h6>
           <input type="range" name="" id="inpHue" min="0" value="0" max="360" />
         </div>
+        <!---------------------- invert   ------------------------>
+        <div id="invert">
+          <h6>invert : <span id="numbInvert">0</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpInvert"
+            min="0"
+            value="0"
+            max="100"
+          />
+        </div>
+        <!---------------------- opacity  ------------------------>
+        <div id="opacity">
+          <h6>opacity : <span id="numbOpacity">100</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpOpacity"
+            min="0"
+            value="100"
+            max="100"
+          />
+        </div>
+        <!---------------------- Saturate  ------------------------>
+        <div id="saturate">
+          <h6>saturate : <span id="numbSaturate">100</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpSaturate"
+            min="0"
+            value="100"
+            max="200"
+          />
+        </div>
+        <!---------------------- Sepia  ------------------------>
+        <div id="sepia">
+          <h6>sepia : <span id="numbSepia">0</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpSepia"
+            min="0"
+            value="0"
+            max="100"
+          />
+        </div>
       </section>
       <!----------------------- right side ------------------->
       <section>
@@ -74,9 +130,8 @@
           </figure>
         </div>
         <div>
-          <span>1 -</span>
-          <p>
-            filter:
+          <p id="myInput">
+            1 - filter :
             <!-- blur radius -->
             <span id="blurTxt"></span>
             <!-- brightness -->
@@ -87,8 +142,46 @@
             <span id="grayscaleTxt"></span>
             <!-- hue -->
             <span id="hueTxt"></span>
+            <!-- invert -->
+            <span id="invertTxt"></span>
+            <!-- opacity -->
+            <span id="opacityTxt"></span>
+            <!-- Saturate -->
+            <span id="saturateTxt"></span>
+            <!-- Sepia -->
+            <span id="sepiaTxt"></span>
+            ;
           </p>
         </div>
+        <div>
+          <button id="copyButton">Copy text</button>
+        </div>
+        <div id="creatorBt">
+          <img src="assets/images/user.png" alt="" />
+        </div>
+      </section>
+      <!-- section 3 -->
+      <section id="creator">
+        <div>
+          <figure>
+            <img src="assets/images/parsa3.jpg" alt="" />
+          </figure>
+          <h1>Parsa Dehghan Pour Farashah</h1>
+          <h5>My Social :</h5>
+          <div>
+            <a href="https://github.com/parsa-farshah"
+              ><img src="assets/images/github-fill.svg" alt=""
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/parsa-dehghan-pour-farashah-85ab04250"
+              ><img src="assets/images/linkedin-box-fill.svg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/parsa_dehghanpour_dv"
+              ><img src="assets/images/instagram-fill.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <img id="closeBtn" src="assets/images/close.png" alt="" />
       </section>
     </main>
   </body>
