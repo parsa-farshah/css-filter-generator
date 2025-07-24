@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photoshop Online</title>
+    <link rel="stylesheet" href="assets/styleSheets/global.css" />
+    <link rel="stylesheet" href="assets/styleSheets/master.css" />
+  </head>
+  <body>
+    <main>
+      <!-------------- control pannel ----------->
+      <section id="cssProperty">
+        <h3>Css Property</h3>
+        <!---------------------- blur radius   ------------------------>
+        <div id="blurRadius">
+          <h6>Blur Radius : <span id="numbBlurRadius">0</span>px</h6>
+          <input
+            type="range"
+            name=""
+            id="inpBlurRadius"
+            min="0"
+            value="0"
+            max="10"
+          />
+        </div>
+        <!---------------------- brightness   ------------------------>
+        <div id="brightness">
+          <h6>brightness : <span id="numbBrightness">100</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpBrightness"
+            min="0"
+            value="100"
+            max="200"
+          />
+        </div>
+        <!---------------------- contrast   ------------------------>
+        <div id="contrast">
+          <h6>contrast : <span id="numbContrast">100</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpContrast"
+            min="0"
+            value="100"
+            max="200"
+          />
+        </div>
+        <!---------------------- grayscale   ------------------------>
+        <div id="grayscale">
+          <h6>grayscale : <span id="numbGrayscale">0</span>%</h6>
+          <input
+            type="range"
+            name=""
+            id="inpGrayscale"
+            min="0"
+            value="0"
+            max="200"
+          />
+        </div>
+        <!---------------------- hue rotate   ------------------------>
+        <div id="hue">
+          <h6>hue : <span id="numbHue">0</span>deg</h6>
+          <input type="range" name="" id="inpHue" min="0" value="0" max="360" />
+        </div>
+      </section>
+      <!----------------------- right side ------------------->
+      <section>
+        <div id="image">
+          <figure>
+            <img id="mainImage" src="assets/images/Azadi.webp" alt="" />
+          </figure>
+        </div>
+        <div>
+          <span>1 -</span>
+          <p>
+            filter:
+            <!-- blur radius -->
+            <span id="blurTxt"></span>
+            <!-- brightness -->
+            <span id="brightnessTxt"></span>
+            <!-- contrast -->
+            <span id="contrastTxt"></span>
+            <!-- grayscale -->
+            <span id="grayscaleTxt"></span>
+            <!-- hue -->
+            <span id="hueTxt"></span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="assets/js/master.js"></script>
+</html>
