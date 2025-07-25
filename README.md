@@ -16,7 +16,7 @@ Inspired by photo editors like Photoshop, this project lets you visually apply C
 ---
 
 ## 📅 Created On  
-**July 18, 2025**
+**July 26, 2025**
 
 ## 👨‍💻 Developed By  
 **Parsa Dehghan Pour Farashah**
