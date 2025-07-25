@@ -63,6 +63,9 @@ let creator = document.getElementById("creator");
 // closeBtn
 let closeBtn = document.getElementById("closeBtn");
 
+// copy click
+let copyAlert = document.getElementById("copyAlert");
+
 // update filters
 function updateFilters() {
   image.style.filter = `blur(${currentBlur}px)  brightness(${currentBrighness}%) contrast(${currentContrast}%) grayscale(${currentGrayscale}%) hue-rotate(${currentHue}deg) 
@@ -175,7 +178,13 @@ copyButton.addEventListener("click", () => {
 
   navigator.clipboard
     .writeText(textToCopy)
-    .then(() => alert("کپی شد:\n" + textToCopy))
+    .then(() => {
+      copyAlert.classList.add("creatorOpen");
+
+      setTimeout(() => {
+        copyAlert.classList.remove("creatorOpen");
+      }, 3000);
+    })
     .catch((err) => console.error("خطا در کپی:", err));
 });
 
