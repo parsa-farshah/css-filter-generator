@@ -367,3 +367,33 @@ main {
   transform: translateX(0%) !important;
   visibility: visible !important;
 }
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    > section {
+      &:nth-of-type(1) {
+        order: 2;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+      }
+      &:nth-of-type(2) {
+        margin: 0 auto 50px;
+        #image {
+          figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+          }
+        }
+        > div {
+          &:nth-of-type(4) {
+            transform: translateX(80px);
+          }
+        }
+      }
+    }
+  }
+}
